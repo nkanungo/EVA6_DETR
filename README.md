@@ -5,7 +5,7 @@ The Transformer Architecture that we discussed before was having only the Encode
 
 Let’s now have a high-level look at the Encoder – Decoder Concept.
 
-![](images/ed.jpg)
+![](images/ed.png)
 
 In general, the Encoder Network takes some input, performs some operation on the input (encode it), Pass the State to the Decoder network which takes some additional input and predicts the output.
 By now we know that the backbone of all the SOA models is Attention Mechanism. Hence it would be very much beneficial to have a good look of the Attention in Encoder and Attention in Decoder first and then extend the understanding for DETR architecture 
