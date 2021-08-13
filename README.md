@@ -53,13 +53,20 @@ Here is a simple example output from DETR network
 
 Few things to remember is 
 
-•	DETR can be easily generalized to produce panoptic segmentation in a unified manner. We show that it significantly outperforms competitive baselines.
-•	DETR works with a minimum 480x480 resolution but can go much higher. 
+
+•	DETR can be easily generalized to produce panoptic segmentation in a unified manner. We show that it significantly outperforms competitive baselines
+
+•	DETR works with a minimum 480x480 resolution but can go much higher
+
 •	There is no class token in DETR
-•	Positional Encodings
+
+
 •	DETR guys performed experiments with fixed sine-based fixed positional encodings and learned encodings. In their results they found, fixed sine positional encoding to perform slightly better than learned positional encodings
+
 •	DETR uses ResNet50 as the backbone
+
 •	Unlike YOLO we don’t need to predict bunding boxes in case of DETR. It automatically performs it. Here is a small visualization of the output of the centroid of bounding boxes it predicts 
+
 •	We will talk about the learning process below  
 
 ![](images/centroid.png)
