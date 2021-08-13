@@ -125,3 +125,26 @@ What are different questions that comes to your mind? let’s say
 
 Now imagine you are performing the Image identification, Object Detection, Image segmentation kind of solution here using DETR Encoder/Decoder Architecture. 
 The Object queries which are input to the Decoder Self attention layer are type of queries which the network tries to address using the output from the Encoder layer and Attention layer followed by FFN of the Decoder network.
+
+
+Model Training output
+======================
+IoU metric: bbox
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.468
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.760
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.511
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.426
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.682
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.182
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.524
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.562
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.433
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.713
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
+Training time 0:02:39
+
+
+![](images/b1.png)
+![](images/b2.png)
+![](images/b3.png)
