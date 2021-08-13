@@ -5,12 +5,12 @@ The Transformer Architecture that we discussed before was having only the Encode
 
 Let’s now have a high-level look at the Encoder – Decoder Concept.
 
-![](images/ed.PNG)
+![](images/ed.jpg)
 
 In general, the Encoder Network takes some input, performs some operation on the input (encode it), Pass the State to the Decoder network which takes some additional input and predicts the output.
 By now we know that the backbone of all the SOA models is Attention Mechanism. Hence it would be very much beneficial to have a good look of the Attention in Encoder and Attention in Decoder first and then extend the understanding for DETR architecture 
 
-![](images/aed.PNG)
+![](images/aed.png)
 
 The Encoder Network takes the input and perform Self attention on the input data. The input is divided into three parts 
 
@@ -25,7 +25,7 @@ Here it’s worth noting that the Self-attention uses multiple heads for better 
 The Decoder layer gets the Query and similarly performs Self attention on the Query. It also contains multiple heads. Now the Processed Query from first attention block of Decoder network along with the output Key and Value from Encoder layer gets fed into another attention layer called Encoder-Decoder Attention. This is also a multi headed processing layer. The output of the Encoder-Decoder Attention is processed through another feed forward network which provides the output.
 The DETR architecture is also very much similar. Let’s see the image of the architecture 
 
-![](images/detr.PNG)
+![](images/detr.png)
 
 # Encoder Network
 
@@ -49,7 +49,7 @@ This architecture is very powerful as the DETR network not only predicts the cla
 Here is a simple example output from DETR network 
 
 
-![](images/elephant.jpeg)
+![](images/elephant.jpg)
 
 Few things to remember is 
 
@@ -62,13 +62,13 @@ Few things to remember is
 •	Unlike YOLO we don’t need to predict bunding boxes in case of DETR. It automatically performs it. Here is a small visualization of the output of the centroid of bounding boxes it predicts 
 •	We will talk about the learning process below  
 
-![](images/centroid.PNG)
+![](images/centroid.png)
 
 Encoder-decoder architecture
 =================================
 The Encoder Network takes the input and perform Self-attention on the input data. The input is divided into three parts 
 
-![](images/aed.PNG)
+![](images/aed.png)
 
 1. Key : It can be considered as the entire Database 
 2. Query : This specifies the one for which we are finding out the Attention . 
@@ -100,14 +100,14 @@ That means let’s say in the room there are 2 cricket bats, 1 foot ball then as
 Now let’s say there are no hockey bats and network predict a hocket bat then it has to go and correct itself as it will get a high loss 
 Similarly, when there are no objects in GT and same is predicted by Network then no loss is logged. We can see the mathematics of loss function below and it should be easily understood 
 
-![](images/loss.PNG)
+![](images/loss.png)
 
 object queries
 ===============
 
 If you have already read the above texts then I am sure you understand what object queries here means. But in this example, I would like to take an image and explain how object queries are decided. Let’s see the below image
 
-![](images/football.PNG)
+![](images/football.png)
 
 What are different questions that comes to your mind? let’s say
 1.	Who is the one with the ball now? 
