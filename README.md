@@ -107,7 +107,7 @@ That means let’s say in the room there are 2 cricket bats, 1 foot ball then as
 Now let’s say there are no hockey bats and network predict a hocket bat then it has to go and correct itself as it will get a high loss 
 Similarly, when there are no objects in GT and same is predicted by Network then no loss is logged. We can see the mathematics of loss function below and it should be easily understood 
 
-![](images/loss.png)
+![](images/loss.PNG)
 
 object queries
 ===============
