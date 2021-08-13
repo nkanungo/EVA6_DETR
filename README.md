@@ -1,3 +1,10 @@
+Developers
+===============
+Monimoy Purkayastha (monimoyd@gmail.com)
+
+Nihar Kanungo (nihar.kanungo@gmail.com)
+
+
 What is DETR
 =================
 DETR which stands for DEtection TRansformer is developed by Facebook AI and probably the most effective Computer Vision Algorithm which is empowered with Object classification, Object Detection, Semantic Segmentation and many other Deep learning tasks. It extends the Transformer based architecture by infusing more intelligence w.r.t adding many object queries to the Decoder Architecture. Before getting into that Let’s talk about the DETR architecture and understand the improvements it did over the Transformer Architecture.
