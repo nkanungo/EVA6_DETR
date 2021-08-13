@@ -114,7 +114,7 @@ object queries
 
 If you have already read the above texts then I am sure you understand what object queries here means. But in this example, I would like to take an image and explain how object queries are decided. Let’s see the below image
 
-![](images/football.png)
+![](images/football.jpg)
 
 What are different questions that comes to your mind? let’s say
 1.	Who is the one with the ball now? 
